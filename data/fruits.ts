@@ -1,0 +1,46 @@
+import type { Fruit } from "@/data/types";
+
+export const fruits: Fruit[] = [
+  { id: "nika", nameKo: "사람사람 열매 모델 니카", nameEn: "Hito Hito no Mi, Model: Nika", type: "환수종", user: "몽키 D. 루피", userId: "luffy", note: "정부는 오랫동안 고무고무 열매라는 파라메시아로 속였습니다. 해방을 웃으며 가져오는 전사 니카. 각성은 와노에서 드러납니다.", spoiler: "final" },
+  { id: "hito", nameKo: "사람사람 열매", nameEn: "Hito Hito no Mi", type: "동물계", user: "토니토니 쵸파", userId: "chopper", note: "순록이 사람의 지혜와 여러 형태를 얻습니다. 럼블볼은 열매 밖의 약입니다." },
+  { id: "bara", nameKo: "바리바리 열매", nameEn: "Bara Bara no Mi", type: "파라메시아", user: "버기", userId: "buggy", note: "몸을 나누고 띄웁니다. 발은 땅에 붙는 쪽에 가깝고, 베는 공격에는 강합니다." },
+  { id: "sube", nameKo: "스베스베 열매", nameEn: "Sube Sube no Mi", type: "파라메시아", user: "알비다", note: "미끄러워 공격이 미끄러집니다. 로그타운에서 모습이 바뀐 알비다의 열매입니다." },
+  { id: "hana", nameKo: "꽃꽃 열매", nameEn: "Hana Hana no Mi", type: "파라메시아", user: "니코 로빈", userId: "robin", note: "몸의 어디에나 팔과 눈을 피웁니다. 전투보다 유적을 읽는 손이 본업에 가깝습니다." },
+  { id: "baku", nameKo: "바쿠바쿠 열매", nameEn: "Baku Baku no Mi", type: "파라메시아", user: "와포루", note: "먹은 것을 몸과 무기로 합칩니다. 드럼 섬의 왕." },
+  { id: "mane", nameKo: "마네마네 열매", nameEn: "Mane Mane no Mi", type: "파라메시아", user: "미스터 2 봉쿠레", userId: "bon-clay", note: "오른손으로 만진 얼굴을 복사합니다. 왼쪽은 되돌립니다." },
+  { id: "suna", nameKo: "모래모래 열매", nameEn: "Suna Suna no Mi", type: "자연계", user: "크로커다일", userId: "crocodile", note: "모래가 되고 마르게 합니다. 액체에 닿으면 형태가 잡힙니다." },
+  { id: "mera", nameKo: "불꽃불꽃 열매", nameEn: "Mera Mera no Mi", type: "자연계", user: "에이스, 그 뒤 사보", userId: "sabo", note: "에이스의 불꽃. 그가 죽은 뒤 드레스로자에서 사보가 이어받습니다.", spoiler: "late" },
+  { id: "goro", nameKo: "번개번개 열매", nameEn: "Goro Goro no Mi", type: "자연계", user: "에넬", userId: "enel", note: "번개와 만트라. 고무는 이 열매의 천적입니다." },
+  { id: "yomi", nameKo: "부활부활 열매", nameEn: "Yomi Yomi no Mi", type: "파라메시아", user: "브룩", userId: "brook", note: "죽은 뒤 영혼이 한 번 돌아옵니다. 몸이 이미 뼈뿐이면 해골로 삽니다." },
+  { id: "kage", nameKo: "그림자그림자 열매", nameEn: "Kage Kage no Mi", type: "파라메시아", user: "겟코 모리아", note: "그림자를 뽑아 시체에 넣습니다. 그림자 없는 사람은 해를 보면 사라집니다." },
+  { id: "nikyu", nameKo: "발발 열매", nameEn: "Nikyu Nikyu no Mi", type: "파라메시아", user: "바솔로뮤 쿠마", userId: "kuma", note: "고통과 공기와 사람까지 발로 튕겨 냅니다.", spoiler: "late" },
+  { id: "mero", nameKo: "사랑사랑 열매", nameEn: "Mero Mero no Mi", type: "파라메시아", user: "보아 행콕", userId: "hancock", note: "흔들린 마음을 돌로 만듭니다." },
+  { id: "gura", nameKo: "진동진동 열매", nameEn: "Gura Gura no Mi", type: "파라메시아", user: "흰수염, 그 뒤 검은수염", userId: "blackbeard", note: "공기를 갈라 지진을 일으킵니다. 흰수염이 죽은 뒤 검은수염이 가집니다.", spoiler: "late" },
+  { id: "yami", nameKo: "어둠어둠 열매", nameEn: "Yami Yami no Mi", type: "자연계", user: "검은수염", userId: "blackbeard", note: "어둠이 능력을 빨아들입니다. 사용자도 고통을 더 받습니다. 두 번째 열매를 가능하게 한 예외입니다.", spoiler: "late" },
+  { id: "ope", nameKo: "수술수술 열매", nameEn: "Ope Ope no Mi", type: "파라메시아", user: "트라팔가 로", userId: "law", note: "ROOM 안에서 자르고 붙입니다. 영구 이식은 사용자의 목숨을 대가로 한다는 설정이 있습니다.", spoiler: "late" },
+  { id: "ito", nameKo: "실실 열매", nameEn: "Ito Ito no Mi", type: "파라메시아", user: "도플라밍고", userId: "doflamingo", note: "사람을 조종하고, 각성하면 주변을 실로 바꿉니다. 새 새장.", spoiler: "late" },
+  { id: "horo", nameKo: "홀로홀로 열매", nameEn: "Horo Horo no Mi", type: "파라메시아", user: "페로나", note: "부정적인 유령. 이미 부정적인 우솝에게는 잘 듣지 않습니다." },
+  { id: "nagi", nameKo: "나기나기 열매", nameEn: "Nagi Nagi no Mi", type: "파라메시아", user: "코라손", userId: "corazon", note: "소리를 지웁니다. 코라손이 비밀을 지킨 방식입니다.", spoiler: "late" },
+  { id: "hobi", nameKo: "호비호비 열매", nameEn: "Hobi Hobi no Mi", type: "파라메시아", user: "슈거", note: "만진 사람을 장난감으로 만들고 기억에서 지웁니다. 드레스로자.", spoiler: "late" },
+  { id: "soru", nameKo: "소울소울 열매", nameEn: "Soru Soru no Mi", type: "파라메시아", user: "빅 맘", userId: "big-mom", note: "수명을 뽑아 물건에 혼을 넣습니다.", spoiler: "late" },
+  { id: "mochi", nameKo: "모찌모찌 열매", nameEn: "Mochi Mochi no Mi", type: "특수 파라메시아", user: "카타쿠리", userId: "katakuri", note: "로그리아처럼 몸을 모찌로 바꿉니다. 특수 파라메시아로 불립니다.", spoiler: "late" },
+  { id: "memo", nameKo: "메모메모 열매", nameEn: "Memo Memo no Mi", type: "파라메시아", user: "푸딩", note: "기억을 필름처럼 빼냅니다.", spoiler: "late" },
+  { id: "jiki", nameKo: "자석자석 열매", nameEn: "Jiki Jiki no Mi", type: "파라메시아", user: "유스타스 키드", userId: "kid", note: "금속을 끌어 당깁니다." },
+  { id: "kage-law", nameKo: "나이 열매", nameEn: "Toshi Toshi no Mi", type: "파라메시아", user: "주얼리 보니", userId: "bonney", note: "나이와 성장의 단계를 바꿉니다. 미래의 형태에 마음이 닿는 장면이 있습니다.", spoiler: "final" },
+  { id: "neko", nameKo: "고양이고양이 열매 모델 표범", nameEn: "Neko Neko no Mi, Model: Leopard", type: "동물계", user: "롭 루치", userId: "lucci", note: "표범 수인. 여섯 식과 함께 에니에스 로비의 최종전." },
+  { id: "uo", nameKo: "어어 열매 모델 창룡", nameEn: "Uo Uo no Mi, Model: Seiryu", type: "환수종", user: "카이도", userId: "kaido", note: "푸른 용. 구름을 만들고 불을 뿜습니다.", spoiler: "final" },
+  { id: "tori", nameKo: "새새 열매 모델 불사조", nameEn: "Tori Tori no Mi, Model: Phoenix", type: "환수종", user: "마르코", userId: "marco", note: "푸른 불꽃으로 회복하는 불사조.", spoiler: "late" },
+  { id: "inu-okuchi", nameKo: "개개 열매 모델 오오쿠치노 마카미", nameEn: "Inu Inu no Mi, Model: Okuchi no Makami", type: "환수종", user: "야마토", userId: "yamato", note: "수호신의 늑대. 얼음을 다룹니다.", spoiler: "final" },
+  { id: "moku", nameKo: "연기연기 열매", nameEn: "Moku Moku no Mi", type: "자연계", user: "스모커", userId: "smoker", note: "연기가 됩니다. 해루석에는 잡힙니다." },
+  { id: "hie", nameKo: "얼음얼음 열매", nameEn: "Hie Hie no Mi", type: "자연계", user: "아오키지", userId: "aokiji", note: "얼음으로 바다를 건넙니다.", spoiler: "mid" },
+  { id: "magu", nameKo: "마그마그마 열매", nameEn: "Magu Magu no Mi", type: "자연계", user: "아카이누", userId: "akainu", note: "마그마. 불꽃 열매보다 위에 있다고 전쟁터에서 드러납니다.", spoiler: "late" },
+  { id: "pika", nameKo: "빛빛 열매", nameEn: "Pika Pika no Mi", type: "자연계", user: "키자루", userId: "kizaru", note: "빛의 속도. 말투만 느립니다." },
+  { id: "gasu", nameKo: "가스가스 열매", nameEn: "Gasu Gasu no Mi", type: "자연계", user: "시저 클라운", note: "가스를 만들고 없앱니다. 산소도 빼앗습니다. 펑크 해저드." },
+  { id: "mori", nameKo: "숲숲 열매", nameEn: "Mori Mori no Mi", type: "자연계", user: "아람키(료쿠규)", note: "식물을 숲처럼 일으킵니다. 이 가이드에서는 이름만 적습니다." },
+  { id: "toki", nameKo: "시간시간 열매", nameEn: "Toki Toki no Mi", type: "파라메시아", user: "코즈키 토키", note: "미래를 향해 사람을 보냅니다. 과거로는 돌아가지 못합니다.", spoiler: "final" },
+  { id: "artificial-dragon", nameKo: "인공 용 열매", nameEn: "Artificial Dragon Fruit", type: "동물계", user: "모모노스케", userId: "momonosuke", note: "베가펑크 쪽의 실패작으로 알려진 분홍 용. 그래도 용은 됩니다.", spoiler: "final" },
+];
+
+export function fruitsOf(userId: string) {
+  return fruits.filter((fruit) => fruit.userId === userId);
+}
