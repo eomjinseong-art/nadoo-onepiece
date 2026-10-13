@@ -12,6 +12,7 @@ import { GROUP_LABEL, characterById, characterNeighbors, characters } from "@/da
 import { fruitsOf } from "@/data/fruits";
 import { REL_LEGEND, otherEnd, relationsOf } from "@/data/relations";
 import { articleLd, breadcrumbLd, jsonLd, pageMetadata } from "@/lib/seo";
+import { CoupangCard } from "@/components/CoupangCard";
 
 export const dynamicParams = false;
 
@@ -223,6 +224,7 @@ export default async function CharacterPage({ params }: { params: Promise<{ id: 
         prev={prev ? { href: `/characters/${prev.id}`, label: prev.nameKo } : undefined}
         next={next ? { href: `/characters/${next.id}`, label: next.nameKo } : undefined}
       />
+      <CoupangCard />
     </article>
   );
 }
