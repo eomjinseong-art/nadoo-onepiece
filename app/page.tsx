@@ -6,6 +6,7 @@ import { arcsInSaga } from "@/data/arcs";
 import { sagas } from "@/data/sagas";
 import { jsonLd, websiteLd } from "@/lib/seo";
 import { HOME_SECTIONS, SITE_NAME, SITE_SUB, SITE_TAGLINE } from "@/lib/site";
+import { CoupangCard } from "@/components/CoupangCard";
 
 export default function HomePage() {
   return (
@@ -57,6 +58,7 @@ export default function HomePage() {
         </ol>
       </section>
 
+      <CoupangCard />
       <section className="mt-10" aria-labelledby="entries">
         <h2 id="entries" className="font-serif text-2xl text-ink">
           어디로 읽을까요

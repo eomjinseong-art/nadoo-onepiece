@@ -9,6 +9,7 @@ import { SpoilerBadge } from "@/components/SpoilerBadge";
 import { arcById, arcNeighbors, arcs } from "@/data/arcs";
 import { sagaById } from "@/data/sagas";
 import { articleLd, breadcrumbLd, jsonLd, pageMetadata } from "@/lib/seo";
+import { CoupangCard } from "@/components/CoupangCard";
 
 export const dynamicParams = false;
 
@@ -140,6 +141,7 @@ export default async function ArcPage({ params }: { params: Promise<{ arc: strin
         prev={prev ? { href: `/story/${prev.id}`, label: prev.title } : undefined}
         next={next ? { href: `/story/${next.id}`, label: next.title } : undefined}
       />
+      <CoupangCard />
     </article>
   );
 }
