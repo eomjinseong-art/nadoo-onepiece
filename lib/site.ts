@@ -142,6 +142,7 @@ export const NAV = [
   { href: "/characters", label: "인물" },
   { href: "/relations", label: "관계도" },
   { href: "/quotes", label: "명대사" },
+  { href: "/japanese", label: "일본어" },
   { href: "/themes", label: "테마" },
   { href: "/devil-fruits", label: "열매" },
   { href: "/bounties", label: "현상금" },
@@ -173,6 +174,12 @@ export const HOME_SECTIONS = [
     en: "Quotes",
     title: "명언 · 명대사",
     desc: "우정, 사랑, 꿈, 정의, 이별, 자유, 웃음. 한두 문장과 그 장면이 있는 이유.",
+  },
+  {
+    href: "/japanese",
+    en: "Japanese",
+    title: "원피스로 배우는 일본어 100",
+    desc: "海賊王におれはなる부터 에그헤드까지. 후리가나·한글 발음·문법 한 줄·일상 예문, 말투 비교와 퀴즈.",
   },
   {
     href: "/themes",

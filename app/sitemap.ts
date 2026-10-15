@@ -7,7 +7,7 @@ import { SITE_URL } from "@/lib/site";
 export default function sitemap(): MetadataRoute.Sitemap {
   assertContent();
   const now = new Date();
-  const staticPaths = ["/", "/story", "/characters", "/relations", "/quotes", "/themes", "/devil-fruits", "/bounties", "/world", "/about"];
+  const staticPaths = ["/", "/story", "/characters", "/relations", "/quotes", "/japanese", "/themes", "/devil-fruits", "/bounties", "/world", "/about"];
   const pages = [
     ...staticPaths.map((path) => ({
       url: path === "/" ? SITE_URL : `${SITE_URL}${path}`,

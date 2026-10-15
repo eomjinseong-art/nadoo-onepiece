@@ -2,6 +2,7 @@ import { arcs } from "@/data/arcs";
 import { bountiesOf } from "@/data/bounties";
 import { characters } from "@/data/characters";
 import { fruits } from "@/data/fruits";
+import { jpItems } from "@/data/japanese";
 import { quotes } from "@/data/quotes";
 import { relations } from "@/data/relations";
 import { sagas } from "@/data/sagas";
@@ -42,6 +43,17 @@ export function assertContent() {
     if (quote.speakerId && !chibi.has(quote.speakerId)) throw new Error(`quote chibi ${quote.id}`);
     if (quote.arcId && !arcIds.has(quote.arcId)) throw new Error(`quote arc ${quote.id}`);
     if (quote.line.length > 80) throw new Error(`quote too long ${quote.id}`);
+  }
+
+  if (jpItems.length !== 100) throw new Error(`japanese count ${jpItems.length}`);
+  const jpIds = new Set<string>();
+  for (const item of jpItems) {
+    if (jpIds.has(item.id)) throw new Error(`japanese dup ${item.id}`);
+    jpIds.add(item.id);
+    if (!arcIds.has(item.arcId)) throw new Error(`japanese arc ${item.id}`);
+    if (item.speakerId && !chibi.has(item.speakerId)) throw new Error(`japanese chibi ${item.id}`);
+    if (item.ja.length > 40) throw new Error(`japanese too long ${item.id}`);
+    if (!item.ja.includes(item.key)) throw new Error(`japanese key ${item.id}`);
   }
 
   for (const relation of relations) {
