@@ -10,6 +10,8 @@ import { arcById, arcNeighbors, arcs } from "@/data/arcs";
 import { sagaById } from "@/data/sagas";
 import { articleLd, breadcrumbLd, jsonLd, pageMetadata } from "@/lib/seo";
 import { CoupangCard } from "@/components/CoupangCard";
+import { Ruby } from "@/components/Ruby";
+import { jpByArc } from "@/data/japanese";
 
 export const dynamicParams = false;
 
@@ -35,6 +37,7 @@ export default async function ArcPage({ params }: { params: Promise<{ arc: strin
   if (!arc) notFound();
   const saga = sagaById(arc.sagaId);
   const { prev, next } = arcNeighbors(arc.id);
+  const jp = jpByArc(arc.id);
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-8">
@@ -127,6 +130,30 @@ export default async function ArcPage({ params }: { params: Promise<{ arc: strin
           <p className="mt-3 text-sm text-muted">
             표로 모아 둔 액수는 <Link href="/bounties" className="text-ocean hover:underline">현상금</Link> 페이지에 있습니다.
           </p>
+        </section>
+      ) : null}
+
+      {jp.length > 0 ? (
+        <section className="mt-8 rounded-lg border border-line bg-card p-4" aria-labelledby="arc-jp">
+          <p className="text-[11px] tracking-[0.16em] text-ocean">Japanese · 이 아크의 일본어</p>
+          <h2 id="arc-jp" className="mt-1 font-serif text-xl text-ink">
+            이 아크에서 배우는 일본어 {jp.length}개
+          </h2>
+          <ul className="mt-2 flex flex-wrap gap-2">
+            {jp.map((item) => (
+              <li key={item.id}>
+                <Link
+                  href={`/japanese?arc=${arc.id}#${item.id}`}
+                  className="inline-block rounded-full border border-line bg-sand px-3 py-1 text-sm text-ink hover:border-ocean hover:text-ocean"
+                >
+                  <Ruby text={item.ruby} /> <span className="text-muted">· {item.ko}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <Link href={`/japanese?arc=${arc.id}#list`} className="mt-3 inline-block text-sm text-ocean hover:underline">
+            발음·문법·예문 카드로 보기 →
+          </Link>
         </section>
       ) : null}
 

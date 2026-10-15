@@ -20,7 +20,13 @@ const CSS = `
  * 본문 중간용 쿠팡 파트너스 카드 (광고). 카드 전체가 하나의 링크입니다.
  * 팝업·고정 오버레이 없이 본문 흐름 안에만 놓습니다. 한 페이지에 1~2개까지만 사용하세요.
  */
-export function CoupangCard({ className = "" }: { className?: string }) {
+export function CoupangCard({
+  className = "",
+  copy = COPY,
+}: {
+  className?: string;
+  copy?: { icon: string; ko: string; en: string };
+}) {
   return (
     <>
       <style dangerouslySetInnerHTML={{ __html: CSS }} />
@@ -28,17 +34,17 @@ export function CoupangCard({ className = "" }: { className?: string }) {
         href={COUPANG_CARD_URL}
         target="_blank"
         rel="sponsored noopener"
-        aria-label={`광고: ${COPY.ko} — 쿠팡에서 보기 (새 창)`}
+        aria-label={`광고: ${copy.ko} — 쿠팡에서 보기 (새 창)`}
         data-coupang-card=""
         className={`cpcard ${className}`.trim()}
       >
         <span style={{ display: "flex", alignItems: "center", gap: "0.9rem", flexWrap: "wrap" }}>
           <span aria-hidden="true" style={{ fontSize: "1.9rem", lineHeight: 1 }}>
-            {COPY.icon}
+            {copy.icon}
           </span>
           <span style={{ flex: "1 1 14rem", minWidth: 0, display: "block" }}>
-            <span style={{ display: "block", fontWeight: 600, lineHeight: 1.5 }}>{COPY.ko}</span>
-            <span style={{ display: "block", marginTop: "0.15rem", fontSize: "0.85rem", opacity: 0.7, lineHeight: 1.4 }}>{COPY.en}</span>
+            <span style={{ display: "block", fontWeight: 600, lineHeight: 1.5 }}>{copy.ko}</span>
+            <span style={{ display: "block", marginTop: "0.15rem", fontSize: "0.85rem", opacity: 0.7, lineHeight: 1.4 }}>{copy.en}</span>
           </span>
           <span
             className="cpcard-btn"
