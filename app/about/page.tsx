@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
@@ -24,6 +25,7 @@ export default function AboutPage() {
       />
       <Breadcrumbs items={[{ href: "/", label: "홈" }, { label: "안내" }]} />
       <PageHead kicker="About · 안내" title="이 사이트" lead={`${SITE_NAME}는 원피스를 처음부터 읽으려는 사람을 위한 비공식 아크 가이드입니다.`} />
+      <NadooAd inline />
       <div className="mt-6 space-y-4 leading-8">
         <p>팬이 만든 비공식 정리 사이트입니다. ONE PIECE의 저작권은 원작자(오다 에이치로)와 슈에이샤, 토에이 애니메이션에 있습니다.</p>
         <p>

@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
@@ -35,6 +36,7 @@ export default function StoryIndexPage() {
         title="이야기"
         lead="1,100편이 넘는 애니메이션을 회차마다 따라가지 않습니다. 사가 안에 아크를 두고, 누가 무엇을 했는지와 그 편이 남긴 뜻만 적습니다. 화수는 만화 기준의 대략입니다."
       />
+      <NadooAd inline />
       <div className="mt-8 space-y-10">
         {sagas.map((saga) => (
           <section key={saga.id} aria-labelledby={saga.id}>

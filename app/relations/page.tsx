@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { PageHead } from "@/components/PageHead";
@@ -27,6 +28,7 @@ export default function RelationsPage() {
         title="관계도"
         lead="이름을 누르면 그 사람과 이어진 선만 밝아집니다. 색은 동료, 맹세의 형제, 가족, 스승, 라이벌, 동맹, 적입니다. 좁은 화면에서는 아래 목록이 같은 관계를 글로 보여 줍니다."
       />
+      <NadooAd inline />
       <div className="mt-6">
         <RelationMap />
       </div>

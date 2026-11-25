@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
@@ -41,6 +42,7 @@ export default function ThemesPage() {
         title="우정 · 사랑 · 꿈 · 자유"
         lead="같은 주제가 어느 아크에서 커지는지 모아 두었습니다. 인물 이름 중 이 사이트에 페이지가 있는 사람만 링크로 이어집니다."
       />
+      <NadooAd inline />
       <div className="mt-8 space-y-12">
         {themes.map((theme) => (
           <section key={theme.id} aria-labelledby={theme.id}>

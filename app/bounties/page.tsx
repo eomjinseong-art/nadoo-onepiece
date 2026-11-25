@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Chibi } from "@/components/Chibi";
@@ -30,6 +31,7 @@ export default function BountiesPage() {
         title="현상금 변천"
         lead="작품 안에서 포스터나 대사로 확인된 액수만 적습니다. 동결된 칠무해는 그 직전의 숫자입니다. 사보의 이후 인상분은 정확한 액수를 확인하지 못해 비워 두었습니다."
       />
+      <NadooAd inline />
       <div className="mt-6 overflow-x-auto rounded-lg border border-line bg-card">
         <table className="w-full min-w-[40rem] text-left text-sm">
           <caption className="sr-only">현상금 변천표</caption>

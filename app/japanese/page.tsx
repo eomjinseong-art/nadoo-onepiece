@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Chibi, hasChibi } from "@/components/Chibi";
@@ -91,6 +92,7 @@ export default function JapanesePage() {
 
       <JapaneseStudy arcs={arcLite} />
 
+      <NadooAd inline />
       <section id="speech" aria-labelledby="jp-speech" className="mt-12 scroll-mt-28">
         <h2 id="jp-speech" className="font-serif text-2xl text-ink">
           인물별 말투 비교

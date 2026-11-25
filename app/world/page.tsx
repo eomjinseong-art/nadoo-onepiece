@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { PageHead } from "@/components/PageHead";
@@ -28,6 +29,7 @@ export default function WorldPage() {
         title="세계"
         lead="바다의 모양과 권력의 이름부터 읽어도 됩니다. 공백의 100년, 포네글리프, 빈 왕좌 쪽은 배지가 있는 절부터 후반입니다."
       />
+      <NadooAd inline />
       <div className="mt-8 space-y-10">
         {worldSections.map((section) => (
           <section key={section.id} aria-labelledby={`${section.id}-title`}>

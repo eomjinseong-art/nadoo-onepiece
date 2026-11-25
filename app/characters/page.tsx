@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Chibi } from "@/components/Chibi";
@@ -35,6 +36,7 @@ export default function CharactersPage() {
         title="인물"
         lead="밀짚모자 열 사람은 꿈과 과거, 능력, 명장면, 대사, 현상금까지 길게 적었습니다. 그 밖의 인물은 이야기에서 맡는 자리 위주로 짧게 적었습니다. 그림은 공식 작화를 베끼지 않은 이 사이트의 마스코트입니다."
       />
+      <NadooAd inline />
       <div className="mt-8 space-y-10">
         {GROUP_ORDER.map((group) => {
           const list = charactersInGroup(group);

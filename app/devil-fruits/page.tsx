@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Chibi, hasChibi } from "@/components/Chibi";
@@ -34,6 +35,7 @@ export default function FruitsPage() {
         title="악마의 열매"
         lead="한 사람이 보통 하나만 먹습니다. 바다와 해루석에 약해지고, 두 개를 가진 예외는 작품 안에서 뚜렷한 경우에만 적습니다. 이름이 나중에 바뀐 열매는 후반 스포일러입니다."
       />
+      <NadooAd inline />
       <div className="mt-8 space-y-10">
         {ORDER.map((type) => {
           const list = fruits.filter((fruit) => fruit.type === type);
