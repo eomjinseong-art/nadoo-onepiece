@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Chibi, hasChibi } from "@/components/Chibi";
@@ -32,6 +33,7 @@ export default function QuotesPage() {
         title="명언 · 명대사"
         lead="한두 문장만 적습니다. 대본과 가사를 길게 옮기지 않았고, 우리말은 장면을 기억하기 위한 짧은 옮김입니다. 원문의 전문이 아닙니다."
       />
+      <NadooAd inline />
       <nav aria-label="주제" className="mt-6 flex flex-wrap gap-2">
         {THEME_META.map((theme) => (
           <a key={theme.id} href={`#${theme.id}`} className="rounded-full border border-line bg-card px-3 py-1 text-sm hover:border-ocean">

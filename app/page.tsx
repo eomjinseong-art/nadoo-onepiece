@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { CoupangBanner } from "@/components/CoupangBanner";
 import { JsonLd } from "@/components/JsonLd";
@@ -59,6 +60,7 @@ export default function HomePage() {
       </section>
 
       <CoupangCard />
+      <NadooAd inline />
       <section className="mt-10" aria-labelledby="entries">
         <h2 id="entries" className="font-serif text-2xl text-ink">
           어디로 읽을까요

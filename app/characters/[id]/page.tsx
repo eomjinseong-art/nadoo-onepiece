@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -112,6 +113,7 @@ export default async function CharacterPage({ params }: { params: Promise<{ id: 
         ) : null}
       </section>
 
+      <NadooAd inline />
       <section className="mt-8">
         <h2 className="font-serif text-2xl text-ink">명장면</h2>
         <ul className="mt-3 list-disc space-y-2 pl-5 leading-8">

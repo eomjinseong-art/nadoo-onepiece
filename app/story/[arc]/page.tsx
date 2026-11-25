@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -92,6 +93,7 @@ export default async function ArcPage({ params }: { params: Promise<{ arc: strin
         </ul>
       </section>
 
+      <NadooAd inline />
       <section className="mt-8">
         <h2 className="font-serif text-2xl text-ink">감동 장면</h2>
         <ul className="mt-3 space-y-3">
