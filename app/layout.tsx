@@ -52,7 +52,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="ko">
       <body className={`${sans.variable} ${serif.variable} min-h-screen bg-bg font-sans text-ink antialiased`}>
         <Header />
-        <main>{children}<NadooAd /></main>
+        <main>{children}<NadooAd types="vpnpromo" /><NadooAd /></main>
         <Footer />
         <Analytics />
         <Script src="https://nadoo-ads.vercel.app/ads.js" strategy="afterInteractive" />
